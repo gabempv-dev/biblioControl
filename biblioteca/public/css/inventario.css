@@ -1,0 +1,31 @@
+/* Forzar que las 3 secciones de la barra (izquierda, centro, derecha) se distribuyan bien */
+.ui-jqgrid .ui-jqgrid-pager {
+    height: auto !important;
+    min-height: 40px !important;
+    padding: 4px 10px !important;
+}
+
+.ui-jqgrid .ui-jqgrid-pager .ui-pg-table {
+    table-layout: auto !important;
+    width: 100% !important;
+}
+
+/* Forzar que la celda central (número de página) e izquierda/derecha sean visibles */
+.ui-jqgrid .ui-jqgrid-pager td {
+    display: table-cell !important;
+    vertical-align: middle !important;
+}
+
+/* Mostrar el texto de 'Página 1 de X' e información de registros */
+.ui-jqgrid .ui-jqgrid-pager .ui-pg-input,
+.ui-jqgrid .ui-jqgrid-pager .ui-pg-selbox,
+.ui-jqgrid .ui-jqgrid-pager .ui-paging-info {
+    display: inline-block !important;
+    color: #2C2725 !important;
+    font-size: 13px !important;
+}
+
+.ui-jqgrid .ui-jqgrid-pager #navinventario_right {
+    text-align: right !important;
+    padding-right: 10px;
+}

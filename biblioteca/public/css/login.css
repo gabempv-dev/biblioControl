@@ -1,0 +1,169 @@
+:root {
+    --umber-brown: #8C6046;
+    --antique-parchment: #F1E4CC;
+    --rosewood: #96584E;
+    --sage-olive: #798165;
+    --ink-black: #2C2725;
+    --ink-darker: #1E1A19;
+    --card-bg: rgba(44, 39, 37, 0.88);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* Imagen de fondo tipo librería clásica con superposición oscura */
+    background: linear-gradient(135deg, rgba(30, 26, 25, 0.82), rgba(44, 39, 37, 0.88)),
+                url('https://images.unsplash.com/photo-1507842217343-583bb7270b66?q=80&w=1600&auto=format&fit=crop') center/cover no-repeat;
+    padding: 20px;
+}
+
+.login-container {
+    background: var(--card-bg);
+    width: 100%;
+    max-width: 420px;
+    padding: 40px;
+    border-radius: 16px;
+    border: 1px solid rgba(241, 228, 204, 0.15);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(12px);
+}
+
+.brand-header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.logo-icon {
+    width: 50px;
+    height: 50px;
+    background: var(--umber-brown);
+    color: var(--antique-parchment);
+    border-radius: 12px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 22px;
+    margin-bottom: 12px;
+    box-shadow: 0 4px 12px rgba(140, 96, 70, 0.3);
+}
+
+h2 {
+    color: var(--antique-parchment);
+    font-size: 26px;
+    font-weight: 700;
+}
+
+.subtitle {
+    color: rgba(241, 228, 204, 0.7);
+    font-size: 14px;
+    margin-top: 6px;
+}
+
+.input-group {
+    margin-bottom: 22px;
+}
+
+.input-group label {
+    display: block;
+    font-size: 13px;
+    font-weight: 600;
+    color: var(--antique-parchment);
+    margin-bottom: 8px;
+}
+
+.input-wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.input-icon {
+    position: absolute;
+    left: 14px;
+    color: rgba(241, 228, 204, 0.5);
+    font-size: 15px;
+}
+
+.input-wrapper input {
+    width: 100%;
+    padding: 12px 42px 12px 42px;
+    background: rgba(255, 255, 255, 0.06);
+    border: 1px solid rgba(241, 228, 204, 0.2);
+    border-radius: 10px;
+    font-size: 14px;
+    color: #FFFFFF;
+    outline: none;
+    transition: all 0.25s ease;
+}
+
+.input-wrapper input::placeholder {
+    color: rgba(241, 228, 204, 0.35);
+}
+
+.input-wrapper input:focus {
+    border-color: var(--umber-brown);
+    background: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 0 0 3px rgba(140, 96, 70, 0.25);
+}
+
+/* Botón del Ojo para la contraseña */
+.btn-toggle-pass {
+    position: absolute;
+    right: 12px;
+    background: none;
+    border: none;
+    color: rgba(241, 228, 204, 0.6);
+    cursor: pointer;
+    padding: 6px;
+    font-size: 16px;
+    transition: color 0.2s ease;
+}
+
+.btn-toggle-pass:hover {
+    color: var(--antique-parchment);
+}
+
+/* Mensajes de error */
+.error-msg {
+    display: block;
+    color: #E57373;
+    font-size: 12px;
+    margin-top: 6px;
+}
+
+#btnEnviar {
+    width: 100%;
+    padding: 14px;
+    background: var(--umber-brown);
+    color: var(--antique-parchment);
+    border: none;
+    border-radius: 10px;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    transition: all 0.25s ease;
+    box-shadow: 0 4px 12px rgba(140, 96, 70, 0.3);
+}
+
+#btnEnviar:hover {
+    background: #a16e51;
+    transform: translateY(-1px);
+    box-shadow: 0 6px 16px rgba(140, 96, 70, 0.4);
+}
+
+.hide {
+    display: none !important;
+}
